@@ -84,15 +84,15 @@ The index.html file must be placed on the EC2 instance in the following director
 
 Typing ls / into our SSH client will display files and folders located in the current directory.
 
-You can create the index.html file by type touch index.html then type vim index.html then paste the contents inside it and save.
+You can create the index.html file by type touch index.html then type vim index.html then make neccessary changes and save but I will be doing things a little differently..
 
-Typing the cd /var/www command allows us to go inside the var directory. When we type ls after, we can see the html folder within the var folder.
+I made a GitHub repo just for the modified index.html file then cloned the repo over to my Ubuntu web server. I will be overwriting the current index.html file with the modified one.
 
-![Snipe 11](https://github.com/Mirahkeyz/Installing-Apache-In-Ubuntu-Server/assets/134533695/02c53dea-653b-4c8e-837c-956fa68f8e3b)
+![Snipe 16](https://github.com/Mirahkeyz/Installing-Apache-In-Ubuntu-Server/assets/134533695/0f30e764-d131-4812-b1ab-646fb232a316)
 
-Lets change directory into the html folder (cd html). Typing ls here will display the index.html file that needs to be customized.
+![Snipe 17](https://github.com/Mirahkeyz/Installing-Apache-In-Ubuntu-Server/assets/134533695/079790e2-22aa-4ad0-92e4-9c7441fb94eb)
 
-And if the index.html is not inside you can move it from the home directory to the var/www/html directory
+Now all we have to do is run the sudo cp /var/www/LUITProject3/index.html /var/www/html/ command to copy and overwrite the existing file with the modified one.
 
 Now we test the website again by pasting the Public IP into the browser again….
 
